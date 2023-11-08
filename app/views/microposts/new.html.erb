@@ -1,0 +1,16 @@
+<%= form_with model: Micropost.new, local: true do |form| %>
+    <p>
+      <%= form.label :title, 'タイトル' %><br>
+      <%= form.text_field :title %>
+    </p>
+  
+    <p>
+      <%= form.label :image, '画像' %><br>
+      <%= form.file_field :image %>
+    </p>
+  
+    <p>
+      <%= form.submit '保存' %>
+    </p>
+  <% end %>
+  

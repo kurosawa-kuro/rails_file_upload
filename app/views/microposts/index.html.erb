@@ -1,0 +1,11 @@
+<% @microposts.each do |micropost| %>
+    <p>
+      <%= link_to micropost do %>
+        <%= micropost.title %><br>
+        <% if micropost.image.attached? %>
+          <%= image_tag(micropost.image, style: 'width:200px;height:200px;object-fit:cover;') %>
+        <% end %>
+      <% end %>
+    </p>
+<% end %>
+  

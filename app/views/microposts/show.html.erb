@@ -1,0 +1,6 @@
+<p>
+  <%= @micropost.title %><br>
+  <% if @micropost.image.attached? %>
+    <%= image_tag(@micropost.image, style: 'width: 400px; height: 400px; object-fit: cover;') %>
+  <% end %>
+</p>
